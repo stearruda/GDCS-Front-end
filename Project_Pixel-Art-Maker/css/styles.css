@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css?family=Cabin+Sketch');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;    
+}
+
+header {
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 2px;
+}
+
+h1 {
+    font-family: 'Cabin Sketch', cursive;
+    font-size: 40px;
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+.wrapper > * {
+    padding: 10px;
+}
+
+.tools-container {
+    background-color: tomato;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 200px;
+    text-align: center;
+}
+
+#sizePicker > *,
+.tools-container > * {
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-size: 1.3em;
+}
+
+
+input {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+input[type="number"], 
+input[type="submit"] {
+    padding: 2px;
+}
+
+.canvas-container {
+    background-color: lightgrey;
+    flex-grow: 999999;
+    flex-shrink: 1;
+    flex-basis: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+table,
+tr,
+td {
+    border: 1px solid black;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+tr {
+    height: 20px;
+}
+
+td {
+    width: 20px;
+}
